@@ -10,7 +10,7 @@
 
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.otp2.otp2week3classassignment.HelloController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.otp2.otp2week3classassignment.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -21,7 +21,7 @@
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="English" />
-                    <String fx:value="Farsi" />
+                    <String fx:value="Russian" />
                     <String fx:value="Japanese" />
                 </FXCollections>
             </items>
@@ -29,19 +29,19 @@
     </HBox>
 
     <HBox spacing="10.0">
-        <Label fx:id="firstNameLabel" text="First Name:" />
+        <Label fx:id="firstNameLabel" text="%firstnamelabel.text" />
         <TextField fx:id="firstNameField" />
     </HBox>
 
     <HBox spacing="10.0">
-        <Label fx:id="lastNameLabel" text="Last Name:" />
+        <Label fx:id="lastNameLabel" text="%lastnamelabel.text" />
         <TextField fx:id="lastNameField" />
     </HBox>
 
     <HBox spacing="10.0">
-        <Label fx:id="emailLabel" text="Email:" />
+        <Label fx:id="emailLabel" text="%email.text" />
         <TextField fx:id="emailField" />
     </HBox>
 
-    <Button mnemonicParsing="false" text="Save" />
+    <Button fx:id="saveButton" mnemonicParsing="false" text="%savebutton.text" onAction="#saveButtonAction" />
 </VBox>
